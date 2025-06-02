@@ -44,7 +44,11 @@ An interactive, responsive calendar built with **HTML**, **CSS**, and **JavaScri
 ---
 
 ## 🖼️ Screenshots
+![image alt](https://github.com/stavyagour/Dynamic-calender-web-app/blob/main/Screenshot%202025-06-03%20001150.png)
 
+![image alt](https://github.com/stavyagour/Dynamic-calender-web-app/blob/main/Screenshot%202025-06-03%20001221.png)
+
+![image alt](https://github.com/stavyagour/Dynamic-calender-web-app/blob/main/Screenshot%202025-06-03%20001247.png)
 
 ## 🚀 Getting Started
 
@@ -52,7 +56,9 @@ An interactive, responsive calendar built with **HTML**, **CSS**, and **JavaScri
 2. Open `index.html` in any browser
 3. Interact with the calendar and add events
 
----
+## 🤖 How GPT/AI Helped
 
-## 📁 Project Structure
-
+- Used ChatGPT to debug event rendering bugs and validate date logic
+- Generated suggestions for analytics aggregation and agenda filtering
+- Improved accessibility and modular JS architecture
+- Enhanced responsive design with mobile-first refinements

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date"></div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div><div>Mon</div><div>Tue</div>
+          <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+        </div>
+        <div class="days"></div>
+        <div class="goto-today">
+          <div class="goto">
+            <input type="text" placeholder="mm/yyyy" class="date-input" />
+            <button class="goto-btn">Go</button>
+          </div>
+          <div class="view-toggle">
+            <button class="view-btn" data-view="month">Month</button>
+            <button class="view-btn" data-view="week">Week</button>
+            <button class="view-btn" data-view="day">Day</button>
+          </div>
+          
+          <div class="today-btn"></div>
+          <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="analytics">
+        <h3>Analytics Dashboard</h3>
+        <p><strong>Events per Category:</strong></p>
+        <ul id="category-stats"></ul>
+        <p><strong>Busiest Day:</strong> <span id="busiest-day">-</span></p>
+        <p><strong>Total Hours:</strong> <span id="total-hours">0</span> hrs</p>
+      </div>
+
+      <div class="agenda">
+        <h3>Upcoming Agenda</h3>
+        <ul id="agenda-list"></ul>
+      </div>
+
+      <div class="today-date">
+        <div class="event-day">Day</div>
+        <div class="event-date">Date</div>
+      </div>
+
+      <div class="events"></div>
+
+      <button class="add-event"><i class="fas fa-plus"></i></button>
+
+      <div class="add-event-wrapper">
+        <div class="add-event-header">
+          <div class="title">Add Event</div>
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        <div class="add-event-body">
+          <div class="add-event-input">
+            <input type="text" class="event-name" placeholder="Event Name" />
+          </div>
+          <div class="add-event-input">
+            <input type="text" class="event-time-from" placeholder="Start Time (hh:mm)" />
+          </div>
+          <div class="add-event-input">
+            <input type="text" class="event-time-to" placeholder="End Time (hh:mm)" />
+          </div>
+          <div class="add-event-input">
+            <select class="event-category">
+              <option value="Work">Work</option>
+              <option value="Personal">Personal</option>
+              <option value="Holiday">Holiday</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
